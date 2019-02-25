@@ -1,0 +1,21 @@
+{
+  "port": "3200",
+  "secret": "mySecretKey",
+  "database": {
+    "dbServer": "localhost",
+    "dbPort": "",
+    "dbDialect": "mongo",
+    "dbDatabase": "",
+    "dbUser": "",
+    "dbPassword": ""
+  },
+  "logging": {
+    "logfile": "./logs/roundup-be-ms.log",
+    "useConsoleLogger": true,
+    "consoleLogLevel": "debug",
+    "useFileLogger": false,
+    "fileLogLevel": "debug",
+    "maxFileSize": 10485760, // 10 MB
+    "maxFiles": 20
+  }
+}

@@ -4,10 +4,7 @@ var logger = require('../common/logger');
 module.exports = function () {
 
     module.sendEmail = function (data, callback) {
-        logger.debug('Send from controller data is ', data.query.text)
-        logger.debug('Send from controller to is ', data.query.to)
-        logger.debug('Send from controller ', data.query)
-        var apiKey = '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';
+        var apiKey = '';
         sgMail.setApiKey(apiKey);
         sgMail.send({
             to: data.query.to,
